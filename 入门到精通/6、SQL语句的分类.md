@@ -42,6 +42,10 @@
 `
 新增
 insert into 表名 (列名1，列名2...) values (列值1, 列值2...); 列和值一一对应
+    编码问题：
+    show variables like '%char%'; 查看编码
+    set names gbk; 修改当前客户端展示数据的编码：只是临时改
+
 更新修改
 update 表名 set 列1=列值1... where 条件
 删除
