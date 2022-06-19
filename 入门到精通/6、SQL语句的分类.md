@@ -1,5 +1,41 @@
 # 语句分类
 - DDL (data defination language)数据定义语言；作用：创建、删除、修改 库表结构（重点）
+`
+    数据库的相关操作
+    查看所有数据库：
+    show databses
+    切换数据库：
+    use 数据库名
+    创建数据库：
+    create database 数据库名
+    删除数据库名：
+    drop database 数据库名
+
+    创建数据表结构：
+    create table 表名 （
+        列名称 列类型 其他限制词
+        ......
+    ）
+    列出表字段：
+    desc 表名
+    展示表结构：
+    show create database 数据库名
+    修改、新增字段及类型：
+    alter table 表名 modify 字段名称 类型;
+    alter table 表名 change 原列名 新列名 类型;
+    alter table 表名 add 列名 类型 限制词;
+    删除表的某一列：
+    alter table 表名 drop 列名
+    修改表名：
+    alter table 表名 rename (to) 新表名
+
+    查看当前所有数据表：
+    show tables;
+
+
+`
+
+
 - DML (data manipulation language)数据操作语言；作用：增、删、改表的记录（重点）
 - DCL (data control language)数据控制语言；作用：用户的创建以及授权
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
