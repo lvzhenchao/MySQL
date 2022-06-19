@@ -23,7 +23,7 @@
     修改、新增字段及类型：
     alter table 表名 modify 字段名称 类型;
     alter table 表名 change 原列名 新列名 类型;
-    alter table 表名 add 列名 类型 限制词;
+    alter table 表名 add 列名 类型 限制词 after 字段名称;
     删除表的某一列：
     alter table 表名 drop 列名
     修改表名：
