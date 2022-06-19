@@ -32,10 +32,52 @@
     查看当前所有数据表：
     show tables;
 
+    清除所有数据：
+    Truncate 表名
+
 
 `
 
-
 - DML (data manipulation language)数据操作语言；作用：增、删、改表的记录（重点）
+`
+新增
+insert into 表名 (列名1，列名2...) values (列值1, 列值2...); 列和值一一对应
+更新修改
+update 表名 set 列1=列值1... where 条件
+删除
+delete from 表名 where 条件
+
+
+`
+
 - DCL (data control language)数据控制语言；作用：用户的创建以及授权
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
