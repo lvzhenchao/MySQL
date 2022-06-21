@@ -55,6 +55,9 @@ delete from 表名 where 条件
 `
 
 - DCL (data control language)数据控制语言；作用：用户的创建以及授权
+`
+不同数据库要对应不同的用户，并且权限也不一样，主要是安全问题；线上尽可能不用root身份
+`
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
 
 
