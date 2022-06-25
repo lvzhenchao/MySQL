@@ -63,6 +63,8 @@ delete from 表名 where 条件
 
     flush privileges; 如果删除掉用户，需要刷新权限
 
+    mysqld --skip-grant-tables 跳过权限表，不验证权限；会重新开一个进程，直接就进到库里了
+
 `
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
 
