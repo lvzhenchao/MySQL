@@ -70,8 +70,13 @@ delete from 表名 where 条件
     用户授权
     grant 权限1，权限2... on 数据库名.* To 用户名 @ IP地址或%；如果是所有数据库：*.*
         grant update,insert,delete on shop.* to 'test'@'192.168.1.106';
+        grant all privileges on *.* to 'test'@'192.168.10.1' 所有数据库，所有权限
     撤销权限
     revoke 权限1，权限2... on 数据库名.* from 用户名@IP地址
+    查看权限
+    show grants for 用户名@IP地址
+    删除用户
+    drop user 用户名@IP地址
 
 
 `
