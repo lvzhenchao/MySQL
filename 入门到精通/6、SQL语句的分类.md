@@ -65,6 +65,15 @@ delete from 表名 where 条件
 
     mysqld --skip-grant-tables 跳过权限表，不验证权限；会重新开一个进程，直接就进到库里了
 
+    创建用户
+    create user '用户名'@'IP地址' IDENTIFIED BY '密码'； 如果让所有的IP使用，要用%
+    用户授权
+    grant 权限1，权限2... on 数据库名.* To 用户名 @ IP地址或%；如果是所有数据库：*.*
+        grant update,insert,delete on shop.* to 'test'@'192.168.1.106';
+    撤销权限
+    revoke 权限1，权限2... on 数据库名.* from 用户名@IP地址
+
+
 `
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
 
