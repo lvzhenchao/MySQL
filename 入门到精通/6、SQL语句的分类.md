@@ -93,6 +93,9 @@ delete from 表名 where 条件
     select sex from user group by sex having count(*) > 2;
 
     连接查询
+        内连接：
+            select s.name,m.mark from student as s, mark as m where s.id = m.stu_id;
+            select s.name,m.mark from student as s inner join mark as m where s.id = m.stu_id;
 
 
     联合查询
