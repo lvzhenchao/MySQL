@@ -82,6 +82,26 @@ delete from 表名 where 条件
 `
 - DQL (data query language)数据查询语言；作用：查询数据（重点）
 
+`
+    去重查询 distinct
+    select distinct(列名) from 表名
+    连接查询 concat(列...)、concat_ws("分隔符"，列...)
+
+    分组查询 group by
+    select * from 表名 group by sex
+    select count(*) as totals,sex from user group by sex;
+    select sex from user group by sex having count(*) > 2;
+
+    连接查询
+
+
+    联合查询
+
+    子查询
+
+
+`
+
 
 
 
