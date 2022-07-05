@@ -97,10 +97,17 @@ delete from 表名 where 条件
             select s.name,m.mark from student as s, mark as m where s.id = m.stu_id;
             select s.name,m.mark from student as s inner join mark as m where s.id = m.stu_id;
 
+            select s.name,m.mark from student as s left join mark as m on s.id = m.stu_id;
+            select s.name,m.mark from student as s right join mark as m on s.id = m.stu_id;
+
 
     联合查询
 
+            union all
+
     子查询
+
+            select id from student where id in ( select stu_id from mark);
 
 
 `
