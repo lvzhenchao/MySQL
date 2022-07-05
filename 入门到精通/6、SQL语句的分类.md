@@ -109,6 +109,10 @@ delete from 表名 where 条件
 
             select id from student where id in ( select stu_id from mark);
 
+    limit 条数限制
+            limit 1
+            limit 2, 5; 从第二个开始往后数5个
+
 
 `
 
