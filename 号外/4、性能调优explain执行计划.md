@@ -1,6 +1,7 @@
 # 1、explain是MySQL性能调优的工具
 
 # 2、type字段所需数据使用的扫描方式【由快到慢】
+- null
 - system：系统表，少量数据，往往不需要进行磁盘IO
 - const：常量连接 where id = 1
 - eq_ref：主键索引(primary key)或者非空唯一索引(unique not null)等值扫描
